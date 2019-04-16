@@ -1,0 +1,5 @@
+%h2{ style: 'padding-bottom: 20px'} Traffic counter
+=@data
+= form_tag('/traffic_counter/read', method: :post, class: 'form-horizontal') do
+  %input{:type=>"hidden", :value=>@data, :name=>:data}
+  = submit_tag('Read Traffic', class: 'btn btn-primary btn-large')

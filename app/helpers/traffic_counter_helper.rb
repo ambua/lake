@@ -1,0 +1,2 @@
+module TrafficCounterHelper
+end
